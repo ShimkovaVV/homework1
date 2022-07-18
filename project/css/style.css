@@ -13,13 +13,15 @@
 }
 .nav_ul {
 	text-align: center;
+	padding: 0px;
+
 }
 .nav_li {
 	display: inline-block;
-	margin-right: 47px;
+	
 }
 
-.nav_li:not(:last-of-type) {
+.nav_li:not(:last-of-type){
 	margin-right: 47px;
 }
 
@@ -33,9 +35,10 @@
 
 .background {
 	text-align: center;
-	background-image: url(../css/img/1.png);
+	background-image: url("../img/1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin: 0 auto;
 
 }
 
@@ -44,6 +47,7 @@
 	font-weight: 700;
 	font-size: 72px;
 	color: #FFFFFF;
+	margin: 0 auto;
 
 }
 
@@ -54,7 +58,7 @@
 	font-size: 36px;
 	text-align: center;
 	color: #162C38;
-	margin: 14px 440px 177px 440px;
+	margin: 14px 0 177px;
 }
 
 .description {
@@ -69,5 +73,137 @@
 	line-height: 49px;
 	color: #FFFFFF;
 	margin: 0 auto;
-	padding: 133px 274px 134px 300px;
+	padding: 133px 0 134px;
 }
+
+.square_section {
+	position: relative;
+	margin-top: 220px;
+}
+
+
+
+.square {
+	position: absolute;
+	width: 178px;
+	height: 121px;
+	background: #BFDEFB;
+}
+
+.square-1 {
+	left: 0px;
+	top: -121px;
+}
+.square-2 {
+	left: 0px;
+	bottom: -60px;
+}
+.square-3 {
+	right: 0px;
+	top: 30px;
+}
+
+.info_text {
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	margin: 0px auto;
+	max-width: 700px;
+}
+.circle_section {
+	margin-top: 220px;
+}
+
+
+.circle_text {
+	position: relative;
+}
+
+.circle_text::before {
+	content: '';
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	background: #5C98AB;
+	transform: translate(-100%,-100%);
+}
+
+.circle_text::after {
+	content: '';
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: #BFDEFB;
+	bottom: -50px;
+	right: -120px;
+}
+
+
+
+
+.form_section {
+	max-width: 647px;
+	margin: 90px auto 100px;
+}
+
+
+.input_wrapper {
+	position: relative;
+}
+
+.input_wrapper:not(:last-of-type) {
+	margin-bottom: 41px;
+}
+
+
+.input {
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	padding: 36px 0 11px 34px;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 49px;
+	color: #000000;
+	box-sizing: border-box;
+	
+}
+
+
+.label {
+	position: absolute;
+	top: 14px;
+	left: 31px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+	color: #000000;
+}
+
+.input::placeholder {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 49px;
+	color: #000000;
+}
+
+
+
+.button_form {
+	width: 100%;
+	background: #5C98AB;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 49px;
+	color: #FFFFFF;
+	padding: 21px 0 22px;
+	margin-top: 58px;
+}
+
+
+
+
+
